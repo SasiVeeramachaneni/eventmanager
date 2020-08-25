@@ -1,0 +1,15 @@
+.App {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 50px 1fr;
+}
+
+.header {
+  background-color: aqua;
+}
+
+.body {
+  background-color: black;
+}
+
