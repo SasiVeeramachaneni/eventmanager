@@ -12,6 +12,12 @@
   src: local('SourceSansPro'), url(./fonts/SourceSansPro-Regular.ttf) format('truetype');
 }
 
+.totalEvents {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
 
 
 .container {
