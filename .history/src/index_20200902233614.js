@@ -10,7 +10,7 @@ const Header = () => (
   <div className="header">
     <div className="logo"><img src={logo} alt=""/></div>
     <div className="heading">PEGA EVENT MANAGER</div>
-    <div className="logo"><Link to="/create">+Create event</Link></div>
+    <div className="logo"><Link to="/create">Create event</Link></div>
   </div>
 );
 

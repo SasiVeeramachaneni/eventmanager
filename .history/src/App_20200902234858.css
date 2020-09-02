@@ -72,6 +72,11 @@
 
 }
 
+.tableCenter {
+  margin-top:auto;
+  margin-bottom: auto;
+}
+
 #events {
   text-align: center;
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;

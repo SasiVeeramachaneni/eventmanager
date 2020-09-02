@@ -70,6 +70,7 @@
 
 .body {
 
+  display: flex;
 }
 
 #events {
@@ -78,17 +79,17 @@
   border-collapse: collapse;
   border: 3px solid #ddd;
   width: 100%;
+  max-width: 100%;
 }
 
 #events td, #events th {
   border: 1px solid #ddd;
   padding: 8px;
-  height: 40px;
 }
 
-#events tr:nth-child(even){background-color: #c4f2f8;}
+#events tr:nth-child(even){background-color: #f2f2f2;}
 
-#events tr:hover {background-color: #8AFFDD;}
+#events tr:hover {background-color: #ddd;}
 
 #events th {
   padding-top: 12px;

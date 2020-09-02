@@ -1,5 +1,30 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import './App.css';
+import Card from './Card';
+import { AiOutlineDropbox } from "react-icons/ai";
+
+
+  const CardList = ({ robots }) => {
+    const cardsArray = robots.map(robot => (
+      <Card
+        name={robot.name}
+        email={robot.email}
+        username={robot.username}
+        id={robot.id} />
+    ));
+  
+    return (
+      <div className="cardList">
+        {cardsArray}
+      </div>
+    );
+  };
+
+  function Events2() {
+      return(
+        <CardList />
+      );
+  }
 
 
   class Events extends Component {
@@ -11,7 +36,7 @@ import './App.css';
               id: 1,
               name: "8.6 Demo",
               username: "Sasi",
-              time: "4th Sep 9.30 AM",
+              email: "Sincere@april.biz",
               document: "www.box.com",
               subsribe: true
             },
@@ -19,7 +44,7 @@ import './App.css';
               id: 2,
               name: "Sales automation demo",
               username: "Bharath",
-              time: "4th Sep 9.30 AM",
+              email: "Sincere@april.biz",
               document: "www.box.com",
               subsribe: false
         
@@ -28,7 +53,7 @@ import './App.css';
               id: 3,
               name: "Create stage demo",
               username: "Naresh",
-              time: "4th Sep 9.30 AM",
+              email: "Sincere@april.biz",
               document: "www.box.com",
               subsribe: false
             },
@@ -36,7 +61,7 @@ import './App.css';
                 id: 4,
                 name: "DX APIs",
                 username: "Kishore",
-                time: "4th Sep 9.30 AM",
+                email: "Sincere@april.biz",
                 document: "www.box.com",
                 subsribe: true
             },
@@ -44,7 +69,7 @@ import './App.css';
                 id: 5,
                 name: "Process fabric demo",
                 username: "Ujjwala",
-                time: "4th Sep 9.30 AM",
+                email: "Sincere@april.biz",
                 document: "www.box.com",
                 subsribe: false
             },
@@ -52,7 +77,7 @@ import './App.css';
                 id: 6,
                 name: "Remote case",
                 username: "Sasi",
-                time: "4th Sep 9.30 AM",
+                email: "Sincere@april.biz",
                 document: "www.box.com",
                 subsribe: true
             },
@@ -62,18 +87,19 @@ import './App.css';
  
     renderTableData() {
       return this.state.students.map((student, index) => {
-         const { id, name, username, time } = student //destructuring
+         const { id, name, username, email, document, subscribe } = student //destructuring
          return (
             <tr key={id}>
                <td>{name}</td>
                <td>{username}</td>
-               <td>{time}</td>
+               <td>{email}</td>
                <td>
-                  <a href="www.box.com" target="_blank" rel="nofollow">
+                 <AiOutlineDropbox />
+                  <a href="www.box.com">
                   Reference documents
                   </a>
                 </td>
-               <td>✓</td>
+               <td>{subscribe}</td>
             </tr>
          )
       })

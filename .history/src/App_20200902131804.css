@@ -83,10 +83,10 @@
 #events td, #events th {
   border: 1px solid #ddd;
   padding: 8px;
-  height: 40px;
+  min-height: 70px;
 }
 
-#events tr:nth-child(even){background-color: #c4f2f8;}
+#events tr:nth-child(even){background-color: #f2f2f2;}
 
 #events tr:hover {background-color: #8AFFDD;}
 
