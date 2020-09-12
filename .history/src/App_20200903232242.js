@@ -6,7 +6,7 @@ function App() {
   return (
       <div className="body">
         <div id="menu-outer">
-          <div className="table10">
+          <div class="table10">
             <ul id="horizontal-list">
               <li>Sasi 1</li>
               <li>Sasi 2</li>

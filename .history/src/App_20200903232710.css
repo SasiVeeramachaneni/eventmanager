@@ -30,7 +30,7 @@ ul#horizontal-list {
 
 ul#horizontal-list li {
   display: inline;
-  width: 40px;;
+  min-width: 40px;;
 }
 
 .container {

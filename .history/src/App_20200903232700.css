@@ -29,8 +29,7 @@ ul#horizontal-list {
   }
 
 ul#horizontal-list li {
-  display: inline;
-  width: 40px;;
+	display: inline;
 }
 
 .container {

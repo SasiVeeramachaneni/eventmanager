@@ -4,18 +4,10 @@ import axios from 'axios';
 
 function renderTableData(myEvents) {
    return myEvents.map((event, index) => {
-      const { id, title, author, eventTime } = event //destructuring
+      const { id, title } = event //destructuring
       return (
          <tr key={id}>
-               <td>{title}</td>
-               <td>{author}</td>
-               <td>{eventTime}</td>
-               <td>
-                  <a href="www.box.com" target="_blank" rel="nofollow">
-                  Reference documents
-                  </a>
-                </td>
-               <td>✓</td>
+            <td>{title}</td>
          </tr>
       )
    })

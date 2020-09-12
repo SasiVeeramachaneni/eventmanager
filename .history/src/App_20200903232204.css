@@ -14,7 +14,7 @@
 
 #menu-outer {
 	height: 84px;
-	
+	background: url(images/bar-bg.jpg) repeat-x;
 }
 
 .table10 {
@@ -26,12 +26,12 @@ ul#horizontal-list {
 	min-width: 696px;
 	list-style: none;
 	padding-top: 20px;
-  }
+	}
+	ul#horizontal-list li {
+		display: inline;
+	}
 
-ul#horizontal-list li {
-  display: inline;
-  width: 40px;;
-}
+
 
 .container {
   padding: 2px 16px;

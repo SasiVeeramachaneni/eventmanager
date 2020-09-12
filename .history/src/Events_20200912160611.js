@@ -2,20 +2,12 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import axios from 'axios';
 
-function renderTableData(myEvents) {
-   return myEvents.map((event, index) => {
-      const { id, title, author, eventTime } = event //destructuring
+function renderTableData() {
+   return this.state.events.map((event, index) => {
+      const { id, title } = event //destructuring
       return (
          <tr key={id}>
-               <td>{title}</td>
-               <td>{author}</td>
-               <td>{eventTime}</td>
-               <td>
-                  <a href="www.box.com" target="_blank" rel="nofollow">
-                  Reference documents
-                  </a>
-                </td>
-               <td>✓</td>
+            <td>{title}</td>
          </tr>
       )
    })
@@ -38,7 +30,7 @@ function Events() {
       <div>
       <table id='events'>
          <tbody>
-            {renderTableData(events)}
+            {this.renderTableData()}
          </tbody>
       </table>
       </div>
